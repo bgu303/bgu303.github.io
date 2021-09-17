@@ -1,0 +1,36 @@
+* {
+    text-align: center;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#wholeGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10% 70% 15%;
+    height: 700px;
+    grid-gap: 5px;
+    width: 970px;
+    
+}
+
+#header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-size: 50px;
+
+}
+
+#footer {
+    font-size: 50px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    height: 90px;
+    width: 970px;
+    object-fit: cover;
+}
+
+p {
+    font-size: 13px;
+    font-weight: normal;
+}
