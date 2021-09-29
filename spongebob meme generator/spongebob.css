@@ -1,0 +1,41 @@
+body {
+    font-family: 'Noto Sans Display', sans-serif;
+    background-color: rgb(224, 224, 224);
+}
+
+img {
+    width: 999px;
+    height: 510px;
+    margin: auto;
+}
+
+.divGrid {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 30px 100px 510px 200px;
+}
+
+button {
+    width: 999px;
+    height: 50px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+input {
+    width: 870px;
+    height: 30px;
+    font-size: 30px;
+    
+}
+
+span {
+    margin: auto;
+    font-weight: bold;
+}
+
+#outputText {
+    font-size: 50px;
+    margin: auto;
+    font-weight: bold;
+}
