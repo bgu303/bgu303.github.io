@@ -122,17 +122,41 @@ section {
     background-color: rgba(0, 0, 0);
     border: 2px solid white;
     
-    
 }
 
 .frontpageTitle {
-    font-size: 50px;
+    font-size: 40px;
     text-decoration: none;
-    font-family: 'Shalimar', cursive;
+    font-family: 'Oswald', sans-serif;
+    color: #53c9ff;
+    position: relative;
+}
+
+.frontpageTitle:visited {
+    color: #53c9ff;
 }
 
 .frontpageTitle:hover {
-    color: white;
+    color: rgb(242, 249, 255);
+}
+
+.frontpageTitle:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: middle;
+    transition: transform 0.3s ease-in;
+}
+
+.frontpageTitle:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    transition: transform 0.1s ease-in;
 }
 
 .sectionImage {
