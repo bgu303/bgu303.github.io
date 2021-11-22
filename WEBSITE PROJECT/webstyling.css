@@ -72,6 +72,39 @@ header {
     
 }
 
+.pageHeader {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+.pageHeader:visited {
+    color: white;
+}
+
+.pageHeader:hover {
+    color: #53c9ff;
+}
+
+.pageHeader:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #caeeff;
+    transform-origin: middle;
+    transition: transform 0.15s ease-in;
+}
+
+.pageHeader:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
 #leagueHeader, #rocketleagueHeader, #runescapeHeader, #csgoHeader, #roeHeader, #poeHeader  {
     color: rgb(255, 255, 255);
 }
