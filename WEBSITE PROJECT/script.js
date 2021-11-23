@@ -41,3 +41,7 @@ function pictureOnClickFunction(imageId, pictureName) {
         image.src = pictureName;
     }
 }
+
+function showValidators() {
+    document.getElementById("validator1").style.display = "inline";
+}
