@@ -17,9 +17,9 @@ document.getElementById("keycodes3").innerHTML = result;
 document.getElementById("keycodes4").innerHTML = result;
 document.getElementById("keycodes5").innerHTML = result;
 
-/*     window.setTimeout(function () {
+    window.setTimeout(function () {
         window.location.reload();
-      }, 300); */
+      }, 300);
 
 function start() {
 
