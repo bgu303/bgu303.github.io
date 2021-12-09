@@ -1,0 +1,29 @@
+* {
+    background-color: black;
+    font-family: 'Oswald', sans-serif;
+}
+
+#keycodes, #keycodes2, #keycodes3, #keycodes4, #keycodes5 {
+    color: rgb(29, 165, 29);
+    text-align: center;
+    font-weight: bold;
+    opacity: 0.8
+    
+}
+
+button {
+    color: rgb(29, 165, 29);
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
