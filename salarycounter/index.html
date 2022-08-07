@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main- content">
+        <p>hours:</p>
+        <input type="number" name="" id="hours" placeholder="Enter your work hours">
+        <p>minutes:</p>
+        <input type="number" name="" id="minutes">
+        <p>hourly salary:</p>
+        <input type="number" name="" id="hourly-salary">
+        <br>
+        <button type="button" class="btn btn-outline-success" id="button-start" onclick="start()">START</button>
+        <!--<button type="button" class="btn btn-outline-danger" id="button-stop" onclick="stop()">STOP</button>
+        <button type="button" class="btn btn-outline-primary" id="button-resume" onclick="resume()">RESUME</button> -->
+        <button type="button" class="btn btn-outline-warning" id="button-restart" onclick="restart()">RESTART</button> 
+        <p id="stopwatch-timer"></p>
+        <p id="salary"></p>
+    </div>
+</body>
+</html>
