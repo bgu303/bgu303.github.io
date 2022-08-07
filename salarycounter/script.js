@@ -16,7 +16,13 @@ function start() {
         totalSalary += secondlySalary
         document.getElementById("salary").innerHTML = "Money made so far: " + totalSalary.toFixed(5) + " €"
         totalSeconds--
+
+        if (totalSeconds == 0) {
+            document.getElementById("stopwatch-timer").innerHTML = "FREEEEEEEEDOOOOOOOOOOOOOOOM"
+            clearInterval(intervalId)
+        }
     }, 1000)
+    document.getElementById("button-start").disabled = true;
 }
 
 
@@ -47,5 +53,6 @@ function restart() {
     document.getElementById("stopwatch-timer").innerHTML = "";
     document.getElementById("salary").innerHTML = "";
     clearInterval(intervalId);
+    document.getElementById("button-start").disabled = false;
 
 }
