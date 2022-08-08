@@ -26,7 +26,15 @@ function start() {
     intervalId = setInterval(function() {
         let hours = Math.floor(totalSeconds / 3600);
         var minutes = Math.floor(totalSeconds % 3600 / 60);
+        if (minutes < 10) {
+            minutes = "0" + minutes;
+        }
+
         var seconds = Math.floor(totalSeconds % 3600 % 60);
+        if (seconds < 10) {
+            seconds = "0" + seconds;
+        }
+        
         document.getElementById("stopwatch-timer").innerHTML = "Time till freedom: " + hours + ":" + minutes + ":" + seconds;
         totalSalary += secondlySalary;
         document.getElementById("salary").innerHTML = "Money made so far: " + totalSalary.toFixed(5) + " €";
@@ -64,7 +72,6 @@ function restart() {
     document.getElementById("hours").value = "";
     document.getElementById("minutes").value = "";
     document.getElementById("hourly-salary").value = "";
-    document.getElementById("button-start").disabled = false;
     document.getElementById("stopwatch-timer").innerHTML = "";
     document.getElementById("salary").innerHTML = "";
     clearInterval(intervalId);
